@@ -7,12 +7,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="container">
-    <h3 class="center-align">Lacak Lokasi Saya</h3>
-    <button class="btn waves-effect waves-light" onclick="lacakLokasi()">Lacak Lokasi</button>
-    <div id="hasil" class="section"></div>
+<body class="container center-align">
+    <!-- Halaman Intro -->
+    <div id="intro">
+        <h3>Selamat Datang</h3>
+        <p>Klik tombol di bawah untuk mulai menggunakan aplikasi.</p>
+        <button class="btn waves-effect waves-light" onclick="mulaiAplikasi()">Mulai</button>
+    </div>
+
+    <!-- Halaman Lacak Lokasi -->
+    <div id="lokasi" style="display: none;">
+        <h3>Lacak Lokasi Saya</h3>
+        <button class="btn waves-effect waves-light" onclick="lacakLokasi()">Lacak Lokasi</button>
+        <div id="hasil" class="section"></div>
+    </div>
 
     <script type="module" src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
-</html>
+    </html>
